@@ -1,0 +1,127 @@
+Build and update the document generation system with strict formatting control based on provided templates.
+
+---
+
+🧠 CORE RULES
+
+- Treat each page as an independent locked layout
+- No content should shift, overflow, or break alignment
+- Maintain exact spacing, margins, and structure of template
+- Output must be print-perfect and visually identical to template
+
+---
+
+⚠️ MOST IMPORTANT RULE
+
+DO NOT INSERT RAW TEXT
+
+➡️ FORMAT → THEN INSERT
+
+All dynamic values must be:
+
+- Cleaned
+- Structured
+- Properly formatted before insertion
+
+---
+
+📄 TEMPLATE USAGE
+
+- Only use the provided templates (agreement + quotation)
+- Remove ALL existing placeholder data (names, address, etc.)
+- Do NOT merge old + new data
+- Replace cleanly with new processed values only
+
+---
+
+✏️ ADDRESS FORMATTING (CRITICAL)
+
+- Convert ALL addresses into CAPITALIZED WORD FORMAT
+
+Example:
+Subudhipur, Kalinga Vihar → SUBUDHIPUR, KALINGA VIHAR
+
+- Apply capitalization:
+  ✔ First letter of each word OR full uppercase (as per template consistency)
+  ✔ Maintain commas and spacing exactly
+  ✔ No extra spaces before/after commas
+
+- Structure address into clean readable lines if required
+
+- Do NOT overflow or wrap badly
+
+---
+
+📌 SPECIAL RULE (AGREEMENT DOC)
+
+- LAST SECTION (First Party / Second Party block):
+
+1. Address must be CAPITALIZED
+2. Layout must remain SIDE-BY-SIDE (left/right aligned)
+3. No shifting or breaking into next line/page
+
+---
+
+📅 DATE FORMATTING (VERY IMPORTANT)
+
+- Only underline NUMBERS:
+
+Example:
+❌ 12 (Day) 04 (Month) 2026 (Year)  → fully underlined ❌
+✅ Only: 12, 04, 2026 → underlined ✔
+
+- Words like (Day), (Month), (Year) must NOT be underlined
+
+---
+
+🎯 UNDERLINE CONTROL
+
+- Remove unnecessary underline from:
+  
+  - Address
+  - Names
+  - Paragraph text
+
+- Keep underline ONLY where logically required (dates numbers)
+
+---
+
+🧱 LAYOUT SAFETY
+
+- No:
+  
+  - Text overflow
+  - UI break
+  - Page shifting
+  - Alignment distortion
+
+- Maintain:
+  ✔ Same spacing
+  ✔ Same font flow
+  ✔ Same visual hierarchy
+
+---
+
+📦 OUTPUT QUALITY
+
+- Clean professional document
+- No formatting glitches
+- No broken structure
+- Matches template EXACTLY
+
+---
+
+🧠 SYSTEM BEHAVIOR
+
+This is NOT a text replacement system.
+
+This is a:
+➡️ CONTROLLED DOCUMENT RENDERING ENGINE
+
+---
+
+Ensure both:
+✔ Agreement document
+✔ Quotation document
+
+are generated with identical formatting discipline and zero layout break.

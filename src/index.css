@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 98%;
+    --foreground: 20 20% 10%;
+
+    --card: 40 25% 97%;
+    --card-foreground: 20 20% 10%;
+
+    --popover: 40 25% 97%;
+    --popover-foreground: 20 20% 10%;
+
+    --primary: 28 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 40 30% 92%;
+    --secondary-foreground: 20 20% 15%;
+
+    --muted: 40 15% 93%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 45 90% 55%;
+    --accent-foreground: 20 20% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 28 85% 55%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --success: 145 60% 42%;
+    --success-foreground: 0 0% 100%;
+
+    --gradient-solar: linear-gradient(135deg, hsl(28, 85%, 55%), hsl(45, 90%, 55%));
+    --gradient-warm: linear-gradient(135deg, hsl(28, 85%, 55%) 0%, hsl(35, 90%, 60%) 50%, hsl(45, 90%, 55%) 100%);
+    --gradient-bg: linear-gradient(180deg, hsl(40, 20%, 98%) 0%, hsl(35, 25%, 95%) 100%);
+
+    --shadow-glow: 0 0 40px -10px hsl(28 85% 55% / 0.3);
+    --shadow-card: 0 4px 24px -4px hsl(20 20% 10% / 0.08);
+    --shadow-card-hover: 0 8px 32px -4px hsl(20 20% 10% / 0.12);
+
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-gradient-solar {
+    background: var(--gradient-solar);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-solar {
+    background: var(--gradient-solar);
+  }
+
+  .bg-gradient-warm {
+    background: var(--gradient-warm);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+}
