@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# welcome to project of good hcakers 
 
 TODO: Document your project here
